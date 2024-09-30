@@ -1,9 +1,7 @@
 /* General order book container */
 .rob_OrderBook {
   font-family: Arial, sans-serif;
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  padding: 5px;
+  background-color: #181825;
   border-radius: 5px;
 }
 
@@ -49,12 +47,4 @@
   background-color: rgba(0, 0, 0, 0.2);
   padding: 5px;
   margin: 10px 0;
-}
-
-/* Custom header style */
-.rob_OrderBook__side-header {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #aaa;
-  margin-bottom: 5px;
 }

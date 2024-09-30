@@ -4,6 +4,7 @@ import SockJS from "sockjs-client";
 import axios from "axios"; // to make HTTP requests
 import CandlestickChart from "./components/CandlestickChart";
 import OrderBook from "./components/OrderBook";
+import "./App.css";
 
 const App = () => {
   const [candlestickData, setCandlestickData] = useState([]);
@@ -78,16 +79,24 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <h1>SOL/USDT Trading Data</h1>
-      <div>
-        <h2>Candlestick Chart</h2>
-        <CandlestickChart data={candlestickData} />
-      </div>
-      <div>
-        <h2>Order Book</h2>
-        <OrderBook data={orderBookData} />
-      </div>
+    <div className="dashboard-container">
+      <header className="dashboard-header">
+        <h1>SOL/USDT Trading Dashboard</h1>
+      </header>
+
+      <main className="dashboard-main">
+        <section className="dashboard-chart">
+          <CandlestickChart data={candlestickData} />
+        </section>
+
+        <section className="dashboard-orderbook">
+          <OrderBook data={orderBookData} />
+        </section>
+      </main>
+
+      <footer className="dashboard-footer">
+        <p>Powered by Bybit API - Live Trading Data</p>
+      </footer>
     </div>
   );
 };

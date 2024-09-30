@@ -5,6 +5,11 @@ const CandlestickChart = ({ data }) => {
   useEffect(() => {
     const chart = init("chart");
 
+    chart.createIndicator("VOL");
+    chart.setStyles("dark");
+
+    document.getElementById("chart").style.backgroundColor = "#181825";
+
     // Apply initial or updated data
     if (data.length > 0) {
       chart.applyNewData(data);
@@ -16,7 +21,7 @@ const CandlestickChart = ({ data }) => {
     };
   }, [data]); // Re-run the effect when 'data' changes
 
-  return <div id="chart" style={{ width: "100%", height: "600px" }} />;
+  return <div id="chart" style={{ width: "100%", height: "800px" }} />;
 };
 
 export default CandlestickChart;

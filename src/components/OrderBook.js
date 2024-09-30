@@ -17,7 +17,7 @@ const OrderBook = ({ data }) => {
   };
 
   return (
-    <div>
+    <div id="book" style={{ height: "800px" }}>
       {bids.length === 0 && asks.length === 0 ? (
         <p>No order book data available.</p>
       ) : (

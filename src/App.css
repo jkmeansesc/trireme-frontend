@@ -1,0 +1,70 @@
+/* App.css */
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #cdd6f4;
+  color: #333;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Header styling */
+.dashboard-header {
+  background-color: #181825;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px 0;
+}
+
+/* Main content styling */
+.dashboard-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1e1e2e;
+}
+
+/* .dashboard-chart { */
+/*   background-color: #1e1e2e; */
+/*   border-radius: 10px; */
+/*   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+/*   padding: 10px; */
+/* } */
+/**/
+/* .dashboard-orderbook { */
+/*   background-color: #1e1e2e; */
+/*   border-radius: 10px; */
+/*   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+/*   padding: 10px; */
+/* } */
+
+/* Footer styling */
+.dashboard-footer {
+  background-color: #181825;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+  .dashboard-main {
+    grid-template-columns: 1fr;
+  }
+}
