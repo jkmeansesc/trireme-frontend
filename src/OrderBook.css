@@ -1,0 +1,60 @@
+/* General order book container */
+.rob_OrderBook {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Styles for the asks (sellers) side */
+.rob_OrderBook__side--asks {
+  color: rgb(255, 99, 71); /* Tomato for asks */
+}
+
+/* Styles for the bids (buyers) side */
+.rob_OrderBook__side--bids {
+  color: rgb(60, 179, 113); /* Green for bids */
+}
+
+/* Price and size list items */
+.rob_OrderBook__list-item {
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.rob_OrderBook__list-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Price formatting */
+.rob_OrderBook__price {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Size formatting */
+.rob_OrderBook__size {
+  text-align: left;
+  font-style: italic;
+}
+
+/* Spread section */
+.rob_OrderBook__spread {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 10px 0;
+}
+
+/* Custom header style */
+.rob_OrderBook__side-header {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 5px;
+}
